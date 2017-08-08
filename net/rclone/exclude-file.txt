@@ -1,0 +1,7 @@
+# a sample exclude rule file
+.git/**
+.sync/**
+log/**
+logs/**
+*.log
+.cache/**

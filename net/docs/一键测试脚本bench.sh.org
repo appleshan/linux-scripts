@@ -1,0 +1,44 @@
+#+TITLE: 一键测试脚本 bench.sh
+
+经过几个版本的演化，一键测试脚本 bench.sh 已经几乎全面适用于各种 Linux 发行版的
+网络（下行）和 IO 测试。并将测试结果以较为美观的方式显示出来。
+
+* 总结一下 bench.sh 特点
+1. 显示当前测试的各种系统信息；
+2. 取自世界多处的知名数据中心的测试点，下载测试比较全面；
+3. 支持 IPv6 下载测速；
+4. IO 测试三次，并显示平均值。
+
+再配合 unixbench.sh 脚本测试，即可全面测试 VPS 的性能。
+
+* 使用方法：
+命令 1：
+
+#+BEGIN_SRC bash
+wget -qO- bench.sh | bash
+#+END_SRC
+
+或者
+#+BEGIN_SRC bash
+curl -Lso- bench.sh | bash
+#+END_SRC
+
+命令 2：
+
+#+BEGIN_SRC bash
+wget -qO- 86.re/bench.sh | bash
+#+END_SRC
+
+或者
+#+BEGIN_SRC bash
+curl -so- 86.re/bench.sh | bash
+#+END_SRC
+
+备注：
+bench.sh 既是脚本名，同时又是域名。所以不要怀疑我写错了或者你看错了。
+
+* 下载地址：
+https://github.com/teddysun/across/blob/master/bench.sh
+
+2016 年 11 月 24 日更新：新增：显示硬盘信息；把 IO 速度测试的位置提前，
+网络下载速度测试放到最后。
