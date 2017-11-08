@@ -1,4 +1,7 @@
 #!/bin/bash
+# -*- shell-scripts -*-
+
+# @see https://github.com/lujun9972/emacs-document/blob/master/emacs-common/%E6%88%91%E6%98%AF%E6%80%8E%E6%A0%B7%E4%BD%BF%E7%94%A8Emacs%E7%9A%84.org
 
 # Makes sure emacs daemon is running and opens the file in Emacs in
 # the terminal.
@@ -14,7 +17,7 @@
 
 # The compliment to this script is ec
 
-# Emacsclient option reference2
+# Emacsclient option reference
 # -a "" starts emacs daemon and reattaches
 # -t starts in terminal, since I won't be using the gui
 # can also pass in -n if you want to have the shell return right away

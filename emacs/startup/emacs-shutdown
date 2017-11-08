@@ -1,4 +1,7 @@
 #!/bin/bash
+# -*- shell-scripts -*-
+
+# @see https://github.com/lujun9972/emacs-document/blob/master/emacs-common/%E6%88%91%E6%98%AF%E6%80%8E%E6%A0%B7%E4%BD%BF%E7%94%A8Emacs%E7%9A%84.org
 
 # simple script to shutdown the running Emacs daemon
 
