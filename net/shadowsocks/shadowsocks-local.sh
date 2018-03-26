@@ -13,6 +13,7 @@
 ### END INIT INFO
 
 # Author: Appleshan <apple.shan@gmail.com>
+# @See http://guleilab.com/2016/04/05/VPS/
 
 # variable default setting {{{
 NAME=shadowsocks-local
