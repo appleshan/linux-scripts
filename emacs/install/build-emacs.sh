@@ -2,7 +2,7 @@
 
 set -e
 
-readonly version="26.0.91" # "25.3" # "25.2" # "25.1"
+readonly version="26.1" # "26.0.91" # "25.3" # "25.2" # "25.1"
 #version_postfix="-rc2" # ".90"
 #patch_version=25.2-rc1-mac-6.2
 
@@ -51,6 +51,7 @@ read -p "Press enter to continue"
 cd emacs-"$version"
 mkdir -vp $install_prefix/{bin/,libexec/,share/,var/}
 
+echo "= Build [configure]:"
 ./autogen.sh
 ./configure \
     --prefix=$install_prefix \
@@ -64,11 +65,12 @@ mkdir -vp $install_prefix/{bin/,libexec/,share/,var/}
 
 read -p "Press enter to continue"
 
+echo "= Build [make]:"
 make -j4
 read -p "Press enter to continue"
 
 echo "=================================================="
-echo "= Install :"
+echo "= Install [make install]:"
 read -p "Press enter to continue"
 
 make install
