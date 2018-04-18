@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 # 用来统计 git 远程项目的代码量
+# @see https://echohn.github.io/2016/09/24/use-cloc-to-count-your-code/
+
 git clone --depth 1 "$1" temp-linecount-repo &&
     printf "('temp-linecount-repo' will be deleted automatically)\n\n\n" &&
     cloc temp-linecount-repo &&
