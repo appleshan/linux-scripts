@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# 用来统计 git 远程项目的代码量
+git clone --depth 1 "$1" temp-linecount-repo &&
+    printf "('temp-linecount-repo' will be deleted automatically)\n\n\n" &&
+    cloc temp-linecount-repo &&
+    rm -rf temp-linecount-repo
