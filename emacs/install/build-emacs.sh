@@ -58,9 +58,13 @@ echo "= Build [configure]:"
     --libexecdir=$install_prefix/libexec \
     --localstatedir=$install_prefix/var \
     --datarootdir=$install_prefix/share \
+    --with-gnutls \
 	--with-imagemagick \
 	--with-modules
 	# --with-xwidgets
+
+# 注：
+# --with-gnutls 是用来支持 ssl 的
 
 read -p "Press enter to continue"
 
